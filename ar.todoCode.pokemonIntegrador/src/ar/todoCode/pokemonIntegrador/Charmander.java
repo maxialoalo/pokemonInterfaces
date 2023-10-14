@@ -1,10 +1,18 @@
 package ar.todoCode.pokemonIntegrador;
 
-public class Charmander extends Pokemon {
-
+public class Charmander extends Pokemon implements IFuego {
+	protected String nombre="Charmander";
+	protected Integer nroPokedex=7;
+	protected Integer temporada=1;
+	
+	
+	public Charmander(Double peso, String sexo) {
+		this.peso=peso;
+		this.sexo=sexo;
+	}
 	
 	public void atacarPunioFuego() {
-		mensajeDeAtaque="Soy Charmander y estoy atacando con punio fuego";
+		mensajeDeAtaque="Soy "+ nombre + " y estoy atacando con punio fuego";
 	}
 	
 	
@@ -12,13 +20,13 @@ public class Charmander extends Pokemon {
 
 
 	public void atacarAscuas() {
-		mensajeDeAtaque="Soy Charmander y estoy atacando con ascuas";
+		mensajeDeAtaque="Soy "+ nombre + " y estoy atacando con ascuas";
 
 	}
 
 
 	public void atacarLanzallamas() {
-		mensajeDeAtaque="Soy Charmander y estoy atacando con lanzallamas";
+		mensajeDeAtaque="Soy "+ nombre + " y estoy atacando con lanzallamas";
 
 	}
 	

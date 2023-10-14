@@ -33,7 +33,7 @@ public class SquirtleTest {
 	}
 */
 	public void squirtlePuedeAtacarConHidropulso() {
-		Squirtle miSquirtle=new Squirtle();
+		Squirtle miSquirtle=new Squirtle(30.0,"femenino");
 		miSquirtle.atacarHidropulso();
 		String esperado="Soy Squirtle y estoy atacando con hidropulso";
 		String obtenido=miSquirtle.getMensajeDeAtaque();

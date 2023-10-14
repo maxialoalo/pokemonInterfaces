@@ -24,7 +24,7 @@ public class CharmanderTest {
 	*/
 	
 	public void charmanderPuedeAtacarConLanzallamas() {
-		Charmander miCharmander=new Charmander();
+		Charmander miCharmander=new Charmander(22.34,"Masculino");
 		miCharmander.atacarLanzallamas();
 		String esperado="Soy Charmander y estoy atacando con lanzallamas";
 		String obtenido=miCharmander.getMensajeDeAtaque();
